@@ -1,8 +1,3 @@
 package com.logue
 
-import io.ktor.server.application.*
-import io.ktor.server.resources.*
-
-fun Application.configureResources() {
-    install(Resources)
-}
+// Archivo de ejemplo del wizard sin uso en la aplicación Logue.

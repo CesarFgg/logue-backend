@@ -5,5 +5,4 @@ ktor:
     modules:
       - com.logue.HttpKt.configureHttp
       - com.logue.SerializationKt.configureSerialization
-      - com.logue.ResourcesKt.configureResources
       - com.logue.RoutingKt.configureRouting

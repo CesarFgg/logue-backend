@@ -1,0 +1,62 @@
+### 1. Login exitoso - Niño (Mateo)
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "usuario": "nino",
+  "password": "1234"
+}
+# Resultado esperado: HTTP 200 OK
+# {"exito":true,"mensaje":"Bienvenido","usuario":{"id":1,"nombre":"Mateo","rol":"NINO"}}
+
+### 2. Login exitoso - Tutor (Ana López)
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "usuario": "tutor",
+  "password": "tutor123"
+}
+# Resultado esperado: HTTP 200 OK
+# {"exito":true,"mensaje":"Bienvenido","usuario":{"id":2,"nombre":"Ana López","rol":"TUTOR"}}
+
+### 3. Login exitoso - Especialista (Dra. Ruiz)
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "usuario": "especialista",
+  "password": "espe123"
+}
+# Resultado esperado: HTTP 200 OK
+# {"exito":true,"mensaje":"Bienvenido","usuario":{"id":3,"nombre":"Dra. Ruiz","rol":"ESPECIALISTA"}}
+
+### 4. Login exitoso - Administrador (Administrador Logue)
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "usuario": "admin",
+  "password": "admin123"
+}
+# Resultado esperado: HTTP 200 OK
+# {"exito":true,"mensaje":"Bienvenido","usuario":{"id":4,"nombre":"Administrador Logue","rol":"ADMINISTRADOR"}}
+
+### 5. Login fallido - Contraseña incorrecta
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "usuario": "nino",
+  "password": "password_incorrecta"
+}
+# Resultado esperado: HTTP 401 Unauthorized
+# {"exito":false,"mensaje":"Usuario o contraseña incorrectos","usuario":null}
+
+### 6. Login fallido - Cuerpo vacío / Petición inválida
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{}
+# Resultado esperado: HTTP 400 Bad Request
+# {"exito":false,"mensaje":"Petición inválida","usuario":null}

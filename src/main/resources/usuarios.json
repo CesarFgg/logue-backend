@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "usuario": "nino",
+    "password": "1234",
+    "rol": "NINO",
+    "nombre": "Mateo"
+  },
+  {
+    "id": 2,
+    "usuario": "tutor",
+    "password": "tutor123",
+    "rol": "TUTOR",
+    "nombre": "Ana López"
+  },
+  {
+    "id": 3,
+    "usuario": "especialista",
+    "password": "espe123",
+    "rol": "ESPECIALISTA",
+    "nombre": "Dra. Ruiz"
+  },
+  {
+    "id": 4,
+    "usuario": "admin",
+    "password": "admin123",
+    "rol": "ADMINISTRADOR",
+    "nombre": "Administrador Logue"
+  }
+]
